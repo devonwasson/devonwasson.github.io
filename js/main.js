@@ -85,7 +85,7 @@
 
 	var carousel = function() {
 		$('.carousel-friends').owlCarousel({
-			autoplay: true,
+			autoplay: false,
 			autoHeight: true,
 			center: true,
 			loop: true,
