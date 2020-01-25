@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 30/08/2019 12:57
+  	Creation date: 25/01/2020 19:58
   	*/
 
 @font-face {
@@ -30,8 +30,10 @@ font-style: normal;
 margin-left: 20px;
 }
 
-.flaticon-rose-variant-outline-with-vines:before { content: "\f100"; }
-.flaticon-rose-outline-variant-with-vines-and-leaves:before { content: "\f101"; }
-.flaticon-reception-bell:before { content: "\f102"; }
+.flaticon-snack:before { content: "\f100"; }
+.flaticon-vine:before { content: "\f101"; }
+.flaticon-rose:before { content: "\f102"; }
 .flaticon-wedding-kiss:before { content: "\f103"; }
-.flaticon-cake:before { content: "\f104"; }
+.flaticon-serving-dish:before { content: "\f104"; }
+.flaticon-champagne-glass:before { content: "\f105"; }
+.flaticon-martini:before { content: "\f106"; }
