@@ -64,39 +64,80 @@
 	};
 	onePageClick();	
 
+	var set_invisible = function(){
+		var flavor_town = document.getElementsByClassName("flavor-town");
+		for (var i=0; i<flavor_town.length; i++) {
+			flavor_town[i].hidden = true;
+		}
+	}
+
+	var lacey_m_text = "Hi I'm Lacey";
+	var mike_text = "Hi I'm Mike";
+	var mae_text = "Hi I'm Mae";
+	var robert_text = "Hi I'm Robert";
+	var danielle_text = "Hi I'm Danielle";
+	var andy_text = "Hi I'm Andy";
+	var lizzi_text = "Hi I'm Lizzi";
+	var sam_text = "Hi I'm Sam";
+	var nicole_text = "Hi I'm Nicole";
+	var elliot_text = "Hi I'm Elliot";
+	var kodie_text = "Hi I'm Kodie";
+
 	$('.carousel-friends').on('changed.owl.carousel', function (e) {
     if (("current: ",e.item.index == 0)){
-    	document.getElementById('welcome-to-flavor-town').innerHTML = "WABAM";
+    	set_invisible();
+    	document.getElementById('flavor-town-1').hidden = false;
+    	document.getElementById('flavor-town-1').innerHTML = lacey_m_text;
     }
     if (("current: ",e.item.index == 1)){
-    	document.getElementById('welcome-to-flavor-town').innerHTML = "hey man whos that weird dude you're  talking to";
+		set_invisible();
+    	document.getElementById('flavor-town-2').hidden = false;
+    	document.getElementById('flavor-town-2').innerHTML = mike_text;
     }
     if (("current: ",e.item.index == 2)){
-        console.log("page03");
+		set_invisible();
+    	document.getElementById('flavor-town-3').hidden = false;
+        document.getElementById('flavor-town-3').innerHTML = mae_text;
     }
     if (("current: ",e.item.index == 3)){
-        console.log("page04");
+		set_invisible();
+    	document.getElementById('flavor-town-4').hidden = false;
+        document.getElementById('flavor-town-4').innerHTML = robert_text;
     }
     if (("current: ",e.item.index == 4)){
-        console.log("page05");
+		set_invisible();
+    	document.getElementById('flavor-town-5').hidden = false;
+        document.getElementById('flavor-town-5').innerHTML = danielle_text;
     }
     if (("current: ",e.item.index == 5)){
-        console.log("page06");
+		set_invisible();
+    	document.getElementById('flavor-town-6').hidden = false;
+        document.getElementById('flavor-town-6').innerHTML = andy_text;
     }
     if (("current: ",e.item.index == 6)){
-        console.log("page07");
+		set_invisible();
+    	document.getElementById('flavor-town-7').hidden = false;
+        document.getElementById('flavor-town-7').innerHTML = lizzi_text;
     }
     if (("current: ",e.item.index == 7)){
-        console.log("page08");
+		set_invisible();
+    	document.getElementById('flavor-town-8').hidden = false;
+        document.getElementById('flavor-town-8').innerHTML = sam_text;
     }
     if (("current: ",e.item.index == 8)){
-        console.log("page09");
+		set_invisible();
+    	document.getElementById('flavor-town-9').hidden = false;
+        document.getElementById('flavor-town-9').innerHTML = nicole_text;
     }
     if (("current: ",e.item.index == 9)){
-        console.log("page10");
+		set_invisible();
+    	document.getElementById('flavor-town-10').hidden = false;
+        document.getElementById('flavor-town-10').innerHTML = elliot_text;
     }
     if (("current: ",e.item.index == 10)){
-        console.log("page11");
+		set_invisible();
+    	document.getElementById('flavor-town-11').hidden = false;
+        document.getElementById('flavor-town-11').innerHTML = kodie_text;
     }
 })
 
