@@ -4,26 +4,22 @@
  });
 
 (function($) {
-
 	"use strict";
 
 	$(window).stellar({
-    responsive: true,
-    parallaxBackgrounds: true,
-    parallaxElements: true,
-    horizontalScrolling: false,
-    hideDistantElements: false,
-    scrollProperty: 'scroll'
-  });
-
+	    responsive: true,
+	    parallaxBackgrounds: true,
+	    parallaxElements: true,
+	    horizontalScrolling: false,
+	    hideDistantElements: false,
+	    scrollProperty: 'scroll'
+  	});
 
 	var fullHeight = function() {
-
 		$('.js-fullheight').css('height', $(window).height());
 		$(window).resize(function(){
 			$('.js-fullheight').css('height', $(window).height());
 		});
-
 	};
 	fullHeight();
 
@@ -38,34 +34,23 @@
 	loader();
 
 	// Scrollax
-   $.Scrollax();
+    $.Scrollax();
 
-
-
-   // Burger Menu
+    // Burger Menu
 	var burgerMenu = function() {
-
 		$('body').on('click', '.js-fh5co-nav-toggle', function(event){
-
 			event.preventDefault();
 
 			if ( $('#ftco-nav').is(':visible') ) {
 				$(this).removeClass('active');
 			} else {
 				$(this).addClass('active');	
-			}
-
-			
-			
+			}			
 		});
-
 	};
 	burgerMenu();
 
-
 	var onePageClick = function() {
-
-
 		$(document).on('click', '#ftco-nav a[href^="#"]', function (event) {
 	    event.preventDefault();
 
@@ -74,22 +59,54 @@
 	    $('html, body').animate({
 	        scrollTop: $($.attr(this, 'href')).offset().top - 70
 	    }, 500, function() {
-	    	// window.location.hash = href;
 	    });
 		});
-
 	};
+	onePageClick();	
 
-	onePageClick();
-	
+	$('.carousel-friends').on('changed.owl.carousel', function (e) {
+    if (("current: ",e.item.index == 0)){
+        console.log("page01");
+    }
+    if (("current: ",e.item.index == 1)){
+        console.log("page02");
+    }
+    if (("current: ",e.item.index == 2)){
+        console.log("page03");
+    }
+    if (("current: ",e.item.index == 3)){
+        console.log("page04");
+    }
+    if (("current: ",e.item.index == 4)){
+        console.log("page05");
+    }
+    if (("current: ",e.item.index == 5)){
+        console.log("page06");
+    }
+    if (("current: ",e.item.index == 6)){
+        console.log("page07");
+    }
+    if (("current: ",e.item.index == 7)){
+        console.log("page08");
+    }
+    if (("current: ",e.item.index == 8)){
+        console.log("page09");
+    }
+    if (("current: ",e.item.index == 9)){
+        console.log("page10");
+    }
+    if (("current: ",e.item.index == 10)){
+        console.log("page11");
+    }
+})
 
 	var carousel = function() {
 		$('.carousel-friends').owlCarousel({
 			autoplay: false,
 			autoHeight: true,
 			center: true,
-			loop: true,
-			items:1,
+			loop: false,
+			items: 1,
 			margin: 30,
 			stagePadding: 0,
 			nav: false,
@@ -103,7 +120,7 @@
 					items: 2
 				},
 				1000:{
-					items: 5
+					items: 6
 				}
 			}
 		});
@@ -131,29 +148,20 @@
 				}
 			}
 		});
-
 	};
 	carousel();
 
 	$('nav .dropdown').hover(function(){
 		var $this = $(this);
-		// 	 timer;
-		// clearTimeout(timer);
 		$this.addClass('show');
 		$this.find('> a').attr('aria-expanded', true);
-		// $this.find('.dropdown-menu').addClass('animated-fast fadeInUp show');
 		$this.find('.dropdown-menu').addClass('show');
 	}, function(){
 		var $this = $(this);
-			// timer;
-		// timer = setTimeout(function(){
-			$this.removeClass('show');
-			$this.find('> a').attr('aria-expanded', false);
-			// $this.find('.dropdown-menu').removeClass('animated-fast fadeInUp show');
-			$this.find('.dropdown-menu').removeClass('show');
-		// }, 100);
+		$this.removeClass('show');
+		$this.find('> a').attr('aria-expanded', false);
+		$this.find('.dropdown-menu').removeClass('show');
 	});
-
 
 	$('#dropdown04').on('show.bs.dropdown', function () {
 	  console.log('show');
@@ -166,7 +174,6 @@
 					st = $w.scrollTop(),
 					navbar = $('.ftco_navbar'),
 					sd = $('.js-scroll-wrap');
-
 			if (st > 150) {
 				if ( !navbar.hasClass('scrolled') ) {
 					navbar.addClass('scrolled');	
@@ -199,14 +206,9 @@
 	};
 	scrollWindow();
 
-	
-
 	var counter = function() {
-		
 		$('#section-counter, .hero-wrap, .ftco-counter').waypoint( function( direction ) {
-
 			if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
-
 				var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
 				$('.number').each(function(){
 					var $this = $(this),
@@ -219,14 +221,10 @@
 					  }, 7000
 					);
 				});
-				
 			}
-
 		} , { offset: '95%' } );
-
 	}
 	counter();
-
 
 	var contentWayPoint = function() {
 		var i = 0;
@@ -266,40 +264,24 @@
 
 	// magnific popup
 	$('.image-popup').magnificPopup({
-    type: 'image',
-    closeOnContentClick: true,
-    closeBtnInside: false,
-    fixedContentPos: true,
-    mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
-     gallery: {
-      enabled: true,
-      navigateByImgClick: true,
-      preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-    },
-    image: {
-      verticalFit: true
-    },
-    zoom: {
-      enabled: true,
-      duration: 300 // don't foget to change the duration also in CSS
-    }
-  });
-
-  $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-    disableOn: 700,
-    type: 'iframe',
-    mainClass: 'mfp-fade',
-    removalDelay: 160,
-    preloader: false,
-
-    fixedContentPos: false
-  });
-
-  var bgVideo = function() {
-		$('.player').mb_YTPlayer();
-	};
-	bgVideo();
-
+	    type: 'image',
+	    closeOnContentClick: true,
+	    closeBtnInside: false,
+	    fixedContentPos: true,
+	    mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+	     gallery: {
+	      enabled: true,
+	      navigateByImgClick: true,
+	      preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+	    },
+	    image: {
+	      verticalFit: true
+	    },
+	    zoom: {
+	      enabled: true,
+	      duration: 300 // don't foget to change the duration also in CSS
+	    }
+  	});
 
 	function makeTimer() {
 
@@ -325,9 +307,7 @@
 		$("#minutes").html(minutes + "<span>Minutes</span>");
 		$("#seconds").html(seconds + "<span>Seconds</span>");		
 
-}
-
-setInterval(function() { makeTimer(); }, 1000);
+	}
+	setInterval(function() { makeTimer(); }, 1000);
 
 })(jQuery);
-
