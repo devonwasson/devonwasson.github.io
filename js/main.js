@@ -1,7 +1,25 @@
- AOS.init({
- 	duration: 800,
- 	easing: 'slide'
- });
+var devon_text = "";
+var lacey_text = "";
+
+var lacey_m_text = "Hi I'm Lacey";
+var mike_text = "Hi I'm Mike";
+var mae_text = "Hi I'm Mae";
+var robert_text = "Hi I'm Robert";
+var danielle_text = "Hi I'm Danielle";
+var andy_text = "Hi I'm Andy";
+var lizzi_text = "Hi I'm Lizzi";
+var sam_text = "Hi I'm Sam";
+var nicole_text = "Hi I'm Nicole";
+var elliot_text = "Hi I'm Elliot";
+var kodie_text = "Hi I'm Kodie";
+
+document.getElementById('lacey-text').innerHTML = lacey_text;
+document.getElementById('devon-text').innerHTML = devon_text;
+
+AOS.init({
+	duration: 800,
+	easing: 'slide'
+});
 
 (function($) {
 	"use strict";
@@ -70,18 +88,6 @@
 			flavor_town[i].hidden = true;
 		}
 	}
-
-	var lacey_m_text = "Hi I'm Lacey";
-	var mike_text = "Hi I'm Mike";
-	var mae_text = "Hi I'm Mae";
-	var robert_text = "Hi I'm Robert";
-	var danielle_text = "Hi I'm Danielle";
-	var andy_text = "Hi I'm Andy";
-	var lizzi_text = "Hi I'm Lizzi";
-	var sam_text = "Hi I'm Sam";
-	var nicole_text = "Hi I'm Nicole";
-	var elliot_text = "Hi I'm Elliot";
-	var kodie_text = "Hi I'm Kodie";
 
 	$('.carousel-friends').on('changed.owl.carousel', function (e) {
     if (("current: ",e.item.index == 0)){
