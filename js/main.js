@@ -66,10 +66,10 @@
 
 	$('.carousel-friends').on('changed.owl.carousel', function (e) {
     if (("current: ",e.item.index == 0)){
-        console.log("page01");
+    	document.getElementById('welcome-to-flavor-town').innerHTML = "WABAM";
     }
     if (("current: ",e.item.index == 1)){
-        console.log("page02");
+    	document.getElementById('welcome-to-flavor-town').innerHTML = "hey man whos that weird dude you're  talking to";
     }
     if (("current: ",e.item.index == 2)){
         console.log("page03");
