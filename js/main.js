@@ -2,15 +2,15 @@ var devon_text = "Born in Annapolis, MD and raised in Easton, PA, Devon grew up 
 var lacey_text = "Born and raised in Monongahela, PA, Lacey was an active dancer and volleyball player. She moved to Lewisburg to study Biomedical Engineering at Bucknell University where she first met Devon. She conducted research at Clemson University and interned for the Children’s Hospital of Philadelphia before graduating and moving to Boston. She now works as a Data Scientist for Aetion and spends her free time attending Barre classes, baking treats for Devon and her coworkers, and exploring small New England towns. She’s excited to have all of the important people in her life in one room to help celebrate her and Devon’s love.";
 
 var lacey_m_text = "Lacey’s best friend since birth! They met when they were babies in strollers and shared dance lessons, birthday parties, and volleyball practices together.";
-var mike_text = "Hi I'm Mike";
+var mike_text = "Devon and Mike met during their Giant Grocery Store employee orientation. Their teenage cashier hijinks led to a lifelong, unwavering friendship.";
 var mae_text = "Lacey met Mae because they were often mistaken for one another around Bucknell’s campus. Turns out, they had a lot more in common than a name and a research lab.";
-var robert_text = "Hi I'm Robert";
+var robert_text = "Cousin by birth but brother in life, Robert has been there for Devon every step of the way as a better friend than anyone could ever ask for.";
 var danielle_text = "Lacey met Danielle in her Biomedical Engineering classes and they bonded over much more than lab reports.";
-var andy_text = "Hi I'm Andy";
-var lizzi_text = "Lacey met Lizzi at Bucknell’s Admitted Students Day and became fast friends wbile sharing a freshman hall and Biomedical Engineering classes.";
-var sam_text = "Hi I'm Sam";
+var andy_text = "Devon and Andy instantly became friends in college, spending as many hours doing calculus homework as playing Diablo III, the latter which continues to this day.";
+var lizzi_text = "Lacey met Lizzi at Bucknell’s Admitted Students Day and became fast friends while sharing a freshman hall and Biomedical Engineering classes.";
+var sam_text = "Sam completes the trio of Bucknell friends, having met Devon during their semester-long soiree into collegiate rowing and remained best friends ever since.";
 var nicole_text = "Lacey is so excited to gain Nicole as a sister and join the family on the wedding day!";
-var elliot_text = "Hi I'm Elliot";
+var elliot_text = "The brother Devon never had, Elliot has shown what it means to be not only an amazing Brother-In-Law but also a friend.";
 var kodie_text = "Lacey and Kodie immediately became inseparable during the transition from elementary schools to middle school.";
 
 document.getElementById('lacey-text').innerHTML = lacey_text;
