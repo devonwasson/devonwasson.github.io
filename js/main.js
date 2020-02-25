@@ -161,8 +161,9 @@ AOS.init({
 			responsive:{
 				0:{
 					items: 2,
-					margin: 0,
-					// stagePadding: 0
+					mouseDrag: false,
+					touchDrag: true
+					// margin: 80,
 				},
 				600:{
 					items: 2
