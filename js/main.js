@@ -163,7 +163,6 @@ AOS.init({
 					items: 2,
 					mouseDrag: false,
 					touchDrag: true
-					// margin: 80,
 				},
 				600:{
 					items: 2
