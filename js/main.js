@@ -9,7 +9,7 @@ var danielle_text = "Lacey met Danielle in her Biomedical Engineering classes an
 var andy_text = "Devon and Andy instantly became friends in college, spending as many hours doing calculus homework as playing Diablo III, the latter which continues to this day.";
 var lizzi_text = "Lacey met Lizzi at Bucknell’s Admitted Students Day and became fast friends while sharing a freshman hall and Biomedical Engineering classes.";
 var sam_text = "Sam completes the trio of Bucknell friends, having met Devon during their semester-long soiree into collegiate rowing and remained best friends ever since.";
-var nicole_text = "Lacey is so excited to gain Nicole as a sister and join the family on the wedding day!";
+var nicole_text = "Having grown up an only child, Lacey is looking forward to finally have someone she can call a sister, and is so excited to have someone as amazing as Nicole for a Sister-In-Law.";
 var elliot_text = "The brother Devon recently gained, Elliot has shown what it means to be not only an amazing Brother-In-Law but also a friend.";
 var kodie_text = "Lacey and Kodie immediately became inseparable during the transition from elementary schools to middle school.";
 
